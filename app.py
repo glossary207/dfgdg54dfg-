@@ -4,11 +4,11 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
 # กำหนด API key ของ OpenAI
-openai.api_key = "YOUR_API_KEY"
+openai.api_key = "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"
 
 # กำหนด Channel access token และ Channel secret ของ Linebot
-line_bot_api = LineBotApi('YOUR_CHANNEL_ACCESS_TOKEN')
-handler = WebhookHandler('YOUR_CHANNEL_SECRET')
+line_bot_api = LineBotApi('GKSxNLQax9VoiJMVsQ3pxwMjoZuAjGBap1jlaQu8iyAu4VbMezv0/ReMK2YJEZU6VSWN9d52htbN6NWf516fzOiMW9BBLLGIeKPmhMl+gw+3ToEsJMsnmeUmq2ckDH5zoJYUwSaeYWY4goloqMmtfAdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('77f97ba29e10e6442381bdca9f4a5d0b')
 
 # กำหนดฟังก์ชันสำหรับการตอบแชท
 def generate_response(input_text):
